@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6435D46-6451-4B17-8EA7-B80F47874992}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Payment</RootNamespace>
+    <AssemblyName>Payment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sgk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_dop_rekvisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_dop_rekvisit.Designer.cs">
+      <DependentUpon>add_dop_rekvisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_kontragent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_kontragent.Designer.cs">
+      <DependentUpon>add_kontragent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="archive.Designer.cs">
+      <DependentUpon>archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="archive_deny_ZNP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="archive_deny_ZNP.Designer.cs">
+      <DependentUpon>archive_deny_ZNP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="archive_filters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="archive_filters.Designer.cs">
+      <DependentUpon>archive_filters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catalog_kontragent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalog_kontragent.Designer.cs">
+      <DependentUpon>catalog_kontragent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catalog_kontragent_dop_rekvisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalog_kontragent_dop_rekvisit.Designer.cs">
+      <DependentUpon>catalog_kontragent_dop_rekvisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_passw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_passw.Designer.cs">
+      <DependentUpon>change_passw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deny_platej.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deny_platej.Designer.cs">
+      <DependentUpon>deny_platej.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_zadan_plat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_zadan_plat.Designer.cs">
+      <DependentUpon>edit_zadan_plat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="email.Designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filters.Designer.cs">
+      <DependentUpon>filters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_of_scan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_of_scan.Designer.cs">
+      <DependentUpon>list_of_scan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_of_scan_archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_of_scan_archive.Designer.cs">
+      <DependentUpon>list_of_scan_archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_of_scan_archive_deny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_of_scan_archive_deny.Designer.cs">
+      <DependentUpon>list_of_scan_archive_deny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="question.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question.Designer.cs">
+      <DependentUpon>question.cs</DependentUpon>
+    </Compile>
+    <Compile Include="select_dop_rekvisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="select_dop_rekvisit.Designer.cs">
+      <DependentUpon>select_dop_rekvisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="select_dop_rekvisit_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="select_dop_rekvisit_edit.Designer.cs">
+      <DependentUpon>select_dop_rekvisit_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="send_status_opl.cs" />
+    <Compile Include="user_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_add.Designer.cs">
+      <DependentUpon>user_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_data.Designer.cs">
+      <DependentUpon>view_data.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_dop_rekvisit.resx">
+      <DependentUpon>add_dop_rekvisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_kontragent.resx">
+      <DependentUpon>add_kontragent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="archive.resx">
+      <DependentUpon>archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="archive_deny_ZNP.resx">
+      <DependentUpon>archive_deny_ZNP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="archive_filters.resx">
+      <DependentUpon>archive_filters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalog_kontragent.resx">
+      <DependentUpon>catalog_kontragent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalog_kontragent_dop_rekvisit.resx">
+      <DependentUpon>catalog_kontragent_dop_rekvisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_passw.resx">
+      <DependentUpon>change_passw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deny_platej.resx">
+      <DependentUpon>deny_platej.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_zadan_plat.resx">
+      <DependentUpon>edit_zadan_plat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="email.resx">
+      <DependentUpon>email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filters.resx">
+      <DependentUpon>filters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_of_scan.resx">
+      <DependentUpon>list_of_scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_of_scan_archive.resx">
+      <DependentUpon>list_of_scan_archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_of_scan_archive_deny.resx">
+      <DependentUpon>list_of_scan_archive_deny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="question.resx">
+      <DependentUpon>question.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="select_dop_rekvisit.resx">
+      <DependentUpon>select_dop_rekvisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="select_dop_rekvisit_edit.resx">
+      <DependentUpon>select_dop_rekvisit_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_add.resx">
+      <DependentUpon>user_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_data.resx">
+      <DependentUpon>view_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w24h241339195965Remove24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w24h241339195591Add24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w24h241339195649Check24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w24h241339195748Forward24x24.png" />
+    <None Include="Resources\w24h241339195795LogOut24x24.png" />
+    <None Include="Resources\w24h241339196030StockIndexUp24x24.png" />
+    <None Include="Resources\w24h241339195709Edit24x24.png" />
+    <None Include="Resources\w24h241339196021StockIndexDown24x24.png" />
+    <None Include="Resources\w24h241339195933Properties24x24.png" />
+    <None Include="Resources\attachment.png" />
+    <Content Include="sgk.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
